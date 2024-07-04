@@ -1,0 +1,18 @@
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+#map {
+    height: 300px; /* Adjust height as needed */
+    margin-bottom: 20px;
+}
+
+#weatherData {
+    text-align: left;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+}
