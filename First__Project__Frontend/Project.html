@@ -3,15 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather Application</title>
+    <title>Multiple Timers App</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <button id="fetchDataBtn">Fetch Data</button>
-        <div id="map"></div>
-        <div id="weatherData"></div>
+        <section class="timer-input">
+            <h2>Timer Input Section</h2>
+            <div class="input-group">
+                <input type="number" id="hours" min="0" placeholder="Hours">
+                <input type="number" id="minutes" min="0" max="59" placeholder="Minutes">
+                <input type="number" id="seconds" min="0" max="59" placeholder="Seconds">
+                <button id="startTimer">Start New Timer</button>
+            </div>
+        </section>
+        
+        <section class="active-timers">
+            <h2>Active Timers Display Section</h2>
+            <div id="timersContainer">
+                <!-- Timers will be dynamically added here -->
+            </div>
+        </section>
     </div>
+
+    <audio id="timerAlert" src="alert.mp3"></audio> <!-- Change src to your alert sound -->
 
     <script src="script.js"></script>
 </body>
